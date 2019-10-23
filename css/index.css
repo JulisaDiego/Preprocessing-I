@@ -1,1 +1,252 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Fira Sans', sans-serif;
+}
+.nav-container {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2.6rem;
+  width: 80%;
+  padding: 2rem;
+}
+.nav-container li {
+  display: inline;
+  padding: 1.6rem;
+  margin: 1.5rem;
+}
+.nav-container a {
+  text-decoration: none;
+}
+.header-wrap {
+  font-size: 2rem;
+  width: 60%;
+  padding: 4rem;
+  margin: auto;
+  background-color: #dadcf0;
+}
+.header-wrap h1 {
+  padding: 5rem 0;
+  font-size: 5rem;
+}
+.header-wrap p {
+  padding: 1.9rem;
+  font-size: 1.5rem;
+}
+.header-wrap img {
+  width: 30%;
+  height: 40%;
+}
+.header-wrap button {
+  border-radius: 10px;
+  font-size: 1.6rem;
+  background-color: white;
+  color: black;
+  border: 2px solid darkgrey;
+  transition-duration: 0.4s;
+  padding: 1.4rem;
+  margin: 1.5rem;
+}
+button:hover {
+  background-color: #36374f;
+  color: white;
+}
+.skills-wrap {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+.summary {
+  width: 100%;
+  font-size: 1.6rem;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.summary h3 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+.skills {
+  width: 100%;
+  font-size: 1.6rem;
+  flex-direction: column;
+}
+.skills h3 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+.skills li {
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 2%;
+}
+.work-history {
+  font-size: 1.8rem;
+}
+.work-history h2 {
+  font-size: 3rem;
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.work-history table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+}
+.work-history td,
+.work-history th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.work-history tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+}
+footer small {
+  align-items: center;
+  margin-left: 40%;
+}
