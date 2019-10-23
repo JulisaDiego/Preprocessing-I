@@ -53,6 +53,9 @@ table {
     box-sizing: border-box;
 }
 
+@width: 60%;
+@background-color: #dddddd;
+@fontSize: 1.6rem;
 
 
 html, body {
@@ -63,32 +66,51 @@ html, body {
 
 
 .nav-container {
-	font-size: 1.6rem;
+	font-size: @fontSize;
 	display: flex;
 	justify-content: flex-end;
 	margin: 0 2.6rem;
 	width: 80%;
 	padding: 2.0rem;
+
+	@media (max-width: 500px) {
+		justify-content: center;
+		
+	}
 	
 	li {
 	 display: inline;
 	 padding: 1.6rem;
-	 margin: 1.5rem;	
+	 margin: 1.5rem;
+
+	@media (max-width: 500px) {
+		flex-direction: column;
+		display: block;
+		border-bottom: 1px solid grey;
+		text-align: center;
+		width: 100%;
 	}
+}
+
 
 	a {
 		text-decoration: none;
 	}
 
+	
 }
 
 
 .header-wrap {
 	font-size: 2.0rem;
-	width: 60%;
+	width: @width;
 	padding: 4.0rem;
 	margin: auto;
 	background-color: #dadcf0;
+
+	@media (max-width: 500px) {
+		width: 100%;
+	}
 
 	h1 {
 		padding: 5rem 0;
@@ -102,39 +124,56 @@ html, body {
 	img {
 		width: 30%;
 		height: 40%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+
+		}
 	}
 
 	button {
 		border-radius: 10px;
-		font-size: 1.6rem;
+		font-size: @fontSize;
 		background-color: white;
         color: black;
         border: 2px solid darkgrey; 
 		transition-duration: 0.4s;
 		padding: 1.4rem;
 		margin: 1.5rem;
+
+		@media (max-width: 500px) {
+			margin-left: 30%;
+		}
 	}
 
 }
 
 button:hover {
-	background-color: #36374f;
+	background-color: @background-color;
 	color: white;
   }
 
   .skills-wrap {
 	  display: flex;
 	  justify-content: center;
-	  width: 60%;
+	  width: @width;
 	  margin: auto;
 
+	  @media (max-width: 500px) {
+		  flex-direction: column;
+		  width: 90%;
+	  }
   }
 
   .summary {
 	  width: 100%;
-	  font-size: 1.6rem;
+	  font-size: @fontSize;
 	  flex-direction: column;
 	  padding: 0 2.0rem;
+
+	  @media (max-width: 500px) {
+		  padding-bottom: 5%;
+	  }
 
 	  h3 {
 		  font-size: 3rem;
@@ -144,10 +183,13 @@ button:hover {
 
   .skills {
 	  width: 100%;
-	font-size: 1.6rem;
+	font-size: @fontSize;
 	flex-direction: column;
 
-
+	@media (max-width: 500px) {
+		padding-bottom: 5%;
+	}
+	
 	h3 {
 		font-size: 3rem;
 		padding: 2.0rem 0;
@@ -165,7 +207,7 @@ button:hover {
 
 	  h2 {
 		  font-size: 3.0rem;
-		  width:60%;
+		  width: @width;
 		  margin:auto;
 		  padding-top: 2.0rem;
 		  padding-bottom: 1.0rem;
@@ -173,30 +215,38 @@ button:hover {
 
 	table {
 		border-collapse: collapse;
-		width: 60%;
+		width: @width;
 		margin: auto;
+
+		@media (max-width:500px) {
+			width: 100%;
+		}
 	  }
 	  
 	  td, th {
-		border: 1px solid #dddddd;
+		border: 1px solid @background-color;
 		text-align: left;
 		padding: 8px;
 	  }
 	  
 	  tr:nth-child(even) {
-		background-color: #dddddd;
+		background-color: @background-color;
 	  }
 }
 
 footer {
 	padding-top: 2.0rem;
 	padding-bottom: 2.0rem;
-	font-size: 1.6rem;
+	font-size: @fontSize;
 	width: 100%;
 	display: flex;
 
 	small {
 		align-items: center;
 		margin-left: 40%;
+
+		@media (max-width: 500px) {
+			margin-left: 25%;
+		}
 	}
 }
