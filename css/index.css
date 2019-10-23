@@ -144,10 +144,24 @@ body {
   width: 80%;
   padding: 2rem;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    justify-content: center;
+  }
+}
 .nav-container li {
   display: inline;
   padding: 1.6rem;
   margin: 1.5rem;
+}
+@media (max-width: 500px) {
+  .nav-container li {
+    flex-direction: column;
+    display: block;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    width: 100%;
+  }
 }
 .nav-container a {
   text-decoration: none;
@@ -158,6 +172,11 @@ body {
   padding: 4rem;
   margin: auto;
   background-color: #dadcf0;
+}
+@media (max-width: 500px) {
+  .header-wrap {
+    width: 100%;
+  }
 }
 .header-wrap h1 {
   padding: 5rem 0;
@@ -171,6 +190,11 @@ body {
   width: 30%;
   height: 40%;
 }
+@media (max-width: 500px) {
+  .header-wrap img {
+    width: 100%;
+  }
+}
 .header-wrap button {
   border-radius: 10px;
   font-size: 1.6rem;
@@ -181,8 +205,13 @@ body {
   padding: 1.4rem;
   margin: 1.5rem;
 }
+@media (max-width: 500px) {
+  .header-wrap button {
+    margin-left: 30%;
+  }
+}
 button:hover {
-  background-color: #36374f;
+  background-color: #dddddd;
   color: white;
 }
 .skills-wrap {
@@ -191,11 +220,22 @@ button:hover {
   width: 60%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .skills-wrap {
+    flex-direction: column;
+    width: 90%;
+  }
+}
 .summary {
   width: 100%;
   font-size: 1.6rem;
   flex-direction: column;
   padding: 0 2rem;
+}
+@media (max-width: 500px) {
+  .summary {
+    padding-bottom: 5%;
+  }
 }
 .summary h3 {
   font-size: 3rem;
@@ -205,6 +245,11 @@ button:hover {
   width: 100%;
   font-size: 1.6rem;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .skills {
+    padding-bottom: 5%;
+  }
 }
 .skills h3 {
   font-size: 3rem;
@@ -230,6 +275,11 @@ button:hover {
   width: 60%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .work-history table {
+    width: 100%;
+  }
+}
 .work-history td,
 .work-history th {
   border: 1px solid #dddddd;
@@ -249,4 +299,9 @@ footer {
 footer small {
   align-items: center;
   margin-left: 40%;
+}
+@media (max-width: 500px) {
+  footer small {
+    margin-left: 25%;
+  }
 }
